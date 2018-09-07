@@ -26,9 +26,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>Johnny</td>
-							<td>3 Companions</td>
+						<tr th:each="guest: ${guests}">
+							<td th:text="${guest.name}"></td>
+							<td th:text="${guest.qtCompanions}"></td>
 						</tr>
 					</tbody>
 				</table>
