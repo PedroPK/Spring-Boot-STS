@@ -12,7 +12,7 @@ public class Property {
 	private String value;
 	private String description;
 	private String category;
-	private String subCategory;
+	private String subcategory;
 	
 	public String getName() {
 		return name;
@@ -39,10 +39,10 @@ public class Property {
 		this.category = category;
 	}
 	public String getSubCategory() {
-		return subCategory;
+		return subcategory;
 	}
 	public void setSubCategory(String subCategory) {
-		this.subCategory = subCategory;
+		this.subcategory = subCategory;
 	}
 	@Override
 	public int hashCode() {
@@ -51,7 +51,7 @@ public class Property {
 		result = prime * result + ((category		== null) ? 0 : category		.hashCode());
 		result = prime * result + ((description		== null) ? 0 : description	.hashCode());
 		result = prime * result + ((name			== null) ? 0 : name			.hashCode());
-		result = prime * result + ((subCategory		== null) ? 0 : subCategory	.hashCode());
+		result = prime * result + ((subcategory		== null) ? 0 : subcategory	.hashCode());
 		result = prime * result + ((value			== null) ? 0 : value		.hashCode());
 		return result;
 	}
@@ -86,10 +86,10 @@ public class Property {
 		} else if (!name.equals(other.name))
 			return false;
 		
-		if (subCategory == null) {
-			if (other.subCategory != null)
+		if (subcategory == null) {
+			if (other.subcategory != null)
 				return false;
-		} else if (!subCategory.equals(other.subCategory))
+		} else if (!subcategory.equals(other.subcategory))
 			return false;
 		
 		if (value == null) {
